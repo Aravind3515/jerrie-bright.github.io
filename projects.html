@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bat.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link href="css/animate.min.css" rel="stylesheet" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body class="bg">
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+      </label>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </nav>
+
+<div class="bod">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="wow bounceIn white">PROJECTS</h2><br>
+                <ul class="filters text-center">
+                    <li class="active header__subtitl" data-filter="*"><a href="#!">All</a></li>
+                    <li class="header__subtitl" data-filter=".rob"><a href="#!">Robotics</a></li>
+                    <li class="header__subtitl" data-filter=".cv"><a href="#!">Computer Vision</a></li>
+                    <li class="header__subtitl" data-filter=".webdv"><a href="#!">Web Development</a></li>
+                </ul>
+
+                <div class="projects">
+                    <div class="row">
+
+                        <div class="col-lg-4 item rob">                          
+                            <div class="card">
+                                <div class="card-head">
+                                    <img src="img/lifo.jpg" alt="" class="img-fl">
+                                    <div class="card-overlay"></div>
+                                    <div class="card-hover">
+                                        <h3>Jett- Line Follower</h3>
+                                        <p>Built a line follower robot with advanced PID algorithms and more than 15 competitions with it in the past one year.</p>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h4 class="title">Robotics</h4>
+                                    <a href="https://github.com/jerrie-bright?tab=repositories" class="btn btn-lg card-btn">See More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 item rob">                            
+                            <div class="card">
+                                <div class="card-head">
+                                    <img src="img/breach.jpeg" alt="" class="img-fl">
+                                    <div class="card-overlay"></div>
+                                    <div class="card-hover">
+                                        <h3>Breach- Line Maze</h3>
+                                        <p> Was an advanced version of the line follower robot which was equipped with the ability to find the shortest path and </p>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h4 class="title">Robotics</h4>
+                                    <a href="https://github.com/jerrie-bright?tab=repositories" class="btn btn-lg card-btn">See More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 item rob">
+                            <div class="card">
+                                <div class="card-head">
+                                    <img src="img/vestium.jpg" alt="" class="img-fl">
+                                    <div class="card-overlay"></div>
+                                    <div class="card-hover">
+                                        <h3>“VESTIUM” - Smart living</h3>
+                                        <p>Designed and implemented an 80” * 80” robotic furniture, which maximizes small spaces which is poised to transform urban living. It is packed with plenty of space, hiding the bed when not in use, and allows to optimize space, at touch of a button.</p>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h4 class="title">Robotics</h4>
+                                    <a href="https://github.com/jerrie-bright?tab=repositories" class="btn btn-lg card-btn">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 item webdv">                            
+                            <div class="card">
+                                <div class="card-head">
+                                    <img src="img/portfolio.jpg" alt="" class="img-fl">
+                                    <div class="card-overlay"></div>
+                                    <div class="card-hover">
+                                        <h3>Portfolio</h3>
+                                        <p>Made the website you are currently viewing with HTML, CSS and JavaScript. My first project in web developmen, also did it in my learning phases of web development.</p>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h4 class="title">Web Development</h4>
+                                    <a href="https://github.com/jerrie-bright?tab=repositories" class="btn btn-lg card-btn">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 item cv">                            
+                            <div class="card">
+                                <div class="card-head">
+                                    <img src="img/segmentation.jpg" alt="" class="img-fl">
+                                    <div class="card-overlay"></div>
+                                    <div class="card-hover">
+                                        <h3>Semantic Segmentation</h3>
+                                        <p>Did instamce segmentation using DeepLab and GluonCV for live segmentation and then using HSV we can track the needful.</p>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h4 class="title">Computer Vision</h4>
+                                    <a href="https://github.com/jerrie-bright?tab=repositories" class="btn btn-lg card-btn">See More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 item rob">                            
+                            <div class="card">
+                                <div class="card-head">
+                                    <img src="img/drone.jpeg" alt="" class="img-fl">
+                                    <div class="card-overlay"></div>
+                                    <div class="card-hover">
+                                        <h3>SOVA</h3>
+                                        <p>Drone made with a target to make it autonomous, basically using it for autonomous tracking and surveilance in particular. Currently a very high speed and maneuver drone made with PIXHAWK controller.</p>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h4 class="title">Robotics</h4>
+                                    <a href="https://github.com/jerrie-bright?tab=repositories" class="btn btn-lg card-btn">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                   
+                        <div class="col-lg-4 item cv">                            
+                            <div class="card">
+                                <div class="card-head">
+                                    <img src="img/xray.jpg" alt="" class="img-fl">
+                                    <div class="card-overlay"></div>
+                                    <div class="card-hover">
+                                        <h3>X-Ray Disease Detection</h3>
+                                        <p>Built a deep learning model,detecting 14 different chest related diseases using MobileNet pre-trained modela and Data-Augmentation.</p>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h4 class="title">Computer Vision</h4>
+                                    <a href="https://github.com/jerrie-bright?tab=repositories" class="btn btn-lg card-btn">See More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 item cv">                            
+                            <div class="card">
+                                <div class="card-head">
+                                    <img src="img/firenet.jpeg" alt="" class="img-fl">
+                                    <div class="card-overlay"></div>
+                                    <div class="card-hover">
+                                        <h3>Firenet</h3>
+                                        <p>Did instamce segmentation using DeepLab and GluonCV for live segmentation and then using HSV we can track the needful.</p>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h4 class="title">Computer Vision</h4>
+                                    <a href="https://github.com/jerrie-bright?tab=repositories" class="btn btn-lg card-btn">See More</a>
+                                </div>
+                            </div>
+                        </div>
+                   
+                        <div class="col-lg-4 item rob">                            
+                            <div class="card">
+                                <div class="card-head">
+                                    <img src="img/asc.jpeg" alt="" class="img-fl">
+                                    <div class="card-overlay"></div>
+                                    <div class="card-hover">
+                                        <h3>XLR8</h3>
+                                        <p>Autonomus Stair Climbing robot. Designed to carry packages from one place to another without dropping the package using linear actuators and gyroscope. Path determination has been achived using Computer Vision and ROS.</p>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h4 class="title">Robotics</h4>
+                                    <a href="https://github.com/jerrie-bright?tab=repositories" class="btn btn-lg card-btn">See More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 item rob">                            
+                            <div class="card">
+                                <div class="card-head">
+                                    <img src="img/surveillance.jpg" alt="" class="img-fl">
+                                    <div class="card-overlay"></div>
+                                    <div class="card-hover">
+                                        <h3>Alarm System</h3>
+                                        <p>Using RFID, 4*4 keypad, Arduino, Motion Sensor, LCD, piezo-electric buzzer designed an alarm system where the sensor will detect any forthcoming objects and activate the alarm with the user being able to enter the password to deactivate the system.</p>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h4 class="title">Robotics</h4>
+                                    <a href="https://github.com/jerrie-bright?tab=repositories" class="btn btn-lg card-btn">See More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 item cv">                            
+                            <div class="card">
+                                <div class="card-head">
+                                    <img src="img/animalnet.jpg" alt="" class="img-fl">
+                                    <div class="card-overlay"></div>
+                                    <div class="card-hover">
+                                        <h3>Animal-Net</h3>
+                                        <p>Developed a Web App, with a customized trained Model using transfer learning and data augmentation, consisting of 30+ animal types and 30+ breeds of the animal types, with an overall IOU of 85%. </p>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h4 class="title">Computer Vision</h4>
+                                    <a href="https://github.com/jerrie-bright?tab=repositories" class="btn btn-lg card-btn">See More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 item webdv">                            
+                            <div class="card">
+                                <div class="card-head">
+                                    <img src="img/atomweb.jpg" alt="" class="img-fl">
+                                    <div class="card-overlay"></div>
+                                    <div class="card-hover">
+                                        <h3>Atom Robotics Website</h3>
+                                        <p> Designed the offcial website of my team, Atom Robotics using HTML, CSS, Javascript and NodeJS. It was 15 days of hardwork, determination and curiousity that successfully made me design it with elegance and modern look.</p>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h4 class="title">Web Developement</h4>
+                                    <a href="https://github.com/jerrie-bright?tab=repositories" class="btn btn-lg card-btn">See More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                       <div class="col-lg-4 item cv">                            
+                            <div class="card">
+                                <div class="card-head">
+                                    <img src="img/retina.jpg" alt="" class="img-fl">
+                                    <div class="card-overlay"></div>
+                                    <div class="card-hover">
+                                        <h3>Diabetic Retinopathy</h3>
+                                        <p> Collected high resolution images of Retina images taken from variety of imaging conditions. Graded the severity of disease with the help of clinician and applied Convolutional NN on the images, thus developed a model with IOU of 90% for Diabetic Retinopathy Detection. </p>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h4 class="title">Computer Vision</h4>
+                                    <a href="https://github.com/jerrie-bright?tab=repositories" class="btn btn-lg card-btn">See More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 item cv">                            
+                            <div class="card">
+                                <div class="card-head">
+                                    <img src="img/accident.jpg" alt="" class="img-fl">
+                                    <div class="card-overlay"></div>
+                                    <div class="card-hover">
+                                        <h3>Accident Alarming System</h3>
+                                        <p> Collected high resolution images of Retina images taken from variety of imaging conditions. Graded the severity of disease with the help of clinician and applied Convolutional NN on the images, thus developed a model with IOU of 90% for Diabetic Retinopathy Detection. </p>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h4 class="title">Computer Vision</h4>
+                                    <a href="https://github.com/jerrie-bright?tab=repositories" class="btn btn-lg card-btn">See More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                         <div class="col-lg-4 item cv">                            
+                            <div class="card">
+                                <div class="card-head">
+                                    <img src="img/tennis.jpeg" alt="" class="img-fl">
+                                    <div class="card-overlay"></div>
+                                    <div class="card-hover">
+                                        <h3>Autonomous Tracking</h3>
+                                        <p> Trained a dataset to track tennis ball in particular. This is a technique with enormous applications in real life strating dominating in surveillance and monitoring.</p>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h4 class="title">Computer Vision</h4>
+                                    <a href="https://github.com/jerrie-bright?tab=repositories" class="btn btn-lg card-btn">See More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <ul class="filters text-center">
+                    <a href="https://github.com/jerrie-bright?tab=repositories"><h2 class="wow bounceIn wht"> >>VIEW MORE</h2></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <footer id="contact" class="footer-distributed">
+    <div class="footer-left">
+      <h3>MY PORTFOLIO</h3>
+      <p class="footer-links">
+        <a href="index.html">Home</a> ·
+        <a href="index.html#about">About Me</a> ·
+        <a href="index.html#skills">Skills</a> ·
+        <a href="timeline.html">Timeline</a> ·
+        <a href="projects.html">Projects</a> ·
+        <a href="achievements.html">Achievements</a>
+      </p>
+      <p class="footer-company-name">JerrinBright &copy; 2020</p>
+    </div>
+    <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>Chennai</span> Tamil Nadu, India</p>
+        </div>
+   
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+91 9840178777</p>
+        </div>
+   
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:jerriebright@gmail.com">jerriebright@gmail.com</a></p>
+        </div>
+    </div>
+ 
+      <div class="footer-right">
+        <p class="footer-company-about">
+        <span>Feel Free to contact me !!!</span>I'm open for Collaborations, Project Assistance,<br> Pro bono and volunteering.</p>
+        <div class="footer-icons">
+        <a href="https://www.linkedin.com/in/jerriebright/"><i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/jerrie-bright"><i class="fa fa-github"></i></a>
+        <a href="https://www.instagram.com/jerrie_25/"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.facebook.com/jerrin.jerrin.5891"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/Jerrie_25"><i class="fa fa-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="js/isotope.min.js"></script>
+        <script src="js/script.js"></script>  
+            <script>
+      $(document).ready(function(){
+        $('.btn').click(function(){
+          $('.items').toggleClass("show");
+          $('ul li').toggleClass("hide");
+        });
+      });
+    </script>
+    <script src="js/home.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/wow.min.js"></script> 
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+</htmll>

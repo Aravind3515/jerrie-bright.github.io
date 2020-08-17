@@ -1,0 +1,21 @@
+.buttonx{
+  padding: 12px 55px 12px 55px;
+  font-weight: bold;
+  border-radius: 30px;
+  font-size: 15px;
+}
+
+.buttonx:hover{
+ color: #fff;
+}
+
+.buttonx--colorful{
+ background-color: #7F56FD;
+ font-family: Roboto-Light;
+ color: #fff;
+}
+
+.buttonx--margin{
+ display: inline-block;
+ margin-top: 40px;
+}

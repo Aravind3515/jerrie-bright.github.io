@@ -4,6 +4,7 @@
 	overflow: hidden;
 	box-shadow: 5px 5px 15px #000;
 	border-radius: 150px 20px 0px 0px;
+	margin: 10px;
 }
 
 .album-img{
@@ -34,7 +35,7 @@
 
 .single-album:hover .album-content{
 	height: 150px;
-	background: #000;
+	background: rgb(16, 31, 46);
 }
 
 .album-info{

@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body class="bg">
-    <nav>
+    <nav class="navbar navbar-fixed-top">
       <input type="checkbox" id="check">
       <label for="check">
         <i class="fas fa-bars" id="btn"></i>
@@ -22,8 +22,8 @@
       </label>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
+        <li><a href="index.html#about">About Me</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
         <li><a href="timeline.html">Timeline</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="achievements.html">Achievements</a></li>
@@ -353,7 +353,15 @@
       </div>
     </div>
   </footer>
-
+  <button id="gotopbtn">
+    <a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
+  </button>
+    <script>
+    const gotopbtn = document.querySelector("#gotopbtn");
+    gotopbtn.addEventListener("click",function(){
+      $("html,body").animate({scrollTop:0}, "slow");
+    });
+  </script>
   
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

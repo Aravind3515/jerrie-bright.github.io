@@ -21,8 +21,8 @@
       </label>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
+        <li><a href="index.html#about">About Me</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
         <li><a href="timeline.html">Timeline</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="achievements.html">Achievements</a></li>
@@ -117,8 +117,8 @@
                     <h2 class="wow bounceIn white">MY  PROFILE</h2><br>
                 </div>
                 <div class="primary-white-button">
-                    <a href="#">RESUME</a>
-                    <a href="#">CV</a>
+                    <a href="https://drive.google.com/file/d/10WSjL5FjLIExRYz6kYnx5k2Yy_zXpcOb/view?usp=sharing">RESUME</a>
+                    <a href="https://drive.google.com/file/d/1f8FvhSz9hHOuCzWmUA_HEPJ13uyhB95s/view?usp=sharing">CV</a>
                 </div>
             </div>
         </div>
@@ -139,6 +139,18 @@
           <h4 class="article-title">Yuan-Ze University, Taiwan</h4>
           <h5>April - June, 2020</h5>
           <h5>Research based on Semantic Segmentation using Conditional Random Fields and Acoustic Event Localization for Smart traffic system.</h5>
+          <a href="https://drive.google.com/file/d/1HALRjrgNlmyTXfImww_FDbgrW68YPw5H/view?usp=sharing" class="read-more remove-underline button-gray">Read more</a>
+        </div>
+      </div>
+      <div class="vertical-thumbnail-card">
+        <a href="#">
+          <img src="img/vestium.jpg" class="image1">
+        </a>
+        <div class="inner">
+          <h3 class="article-title">VESTIUM</h3>
+          <h4 class="date">ROBOTIC SMART CLOSET</h4>
+          <h5>April - Present</h5>
+          <h5>Designed and implemented an 80” * 80” robotic furniture, which maximizes small spaces which is poised to transform urban living. It is packed with plenty of space, hiding the bed when not in use, and allows to optimize space, at touch of a button.</h5>
           <a href="#" class="read-more remove-underline button-gray">Read more</a>
         </div>
       </div>
@@ -151,19 +163,10 @@
           <h4 class="date">CURRENTS'20, NIT Trichy</h4>
           <h5>Feb 16,2020</h5>
           <h5>Secured first place in the Autonomous Line Follower championship held in NIT Trichy. Won the first place finishing the track in 19 seconds despite all the obstacles put forth us.</h5>
-          <a href="#" class="read-more remove-underline button-gray">Read more</a>
-        </div>
-      </div>
-      <div class="vertical-thumbnail-card">
-        <a href="#">
-          <img src="img/breach.jpeg" class="image1">
-        </a>
-        <div class="inner">
-          <h3 class="article-title">ROBOZEST</h3>
-          <h4 class="date">KURUKSHETRA'20, CEG</h4>
-          <h5>Feb 15,2020</h5>
-          <h5>Secured first place in the Robozest championship held in CEG, Anna University. It had multiple challenging tasks at hand, starting with color detection and path refining, producing our own source of light inside caves and agility.</h5>
-          <a href="#" class="read-more remove-underline button-gray">Read more</a>
+          <a href="#" onclick="toggle();" class="read-more button-gray">View Video</a>
+          <div class="trailer">
+            <video src="vid/NIT_Finals.mp4" controls="true"></video>
+            <img src="vid/close.png" class="close" onclick="toggle();">
         </div>
       </div>
     </div>
@@ -213,7 +216,15 @@
       </div>
     </div>
   </footer>
-
+<script type="text/javascript">
+  function toggle() {
+    var trailer=document.querySelector(".trailer")
+    var video=document.querySelector("video")
+    trailer.classList.toggle("active")
+    video.pause();
+    video.currentTime = 0;
+  }
+</script>
     <script>
       $(document).ready(function(){
         $('.btn').click(function(){

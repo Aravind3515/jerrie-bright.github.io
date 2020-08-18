@@ -606,5 +606,9 @@ section {
 		max-width: 90%;
 
 	}
+	.close{
+		max-height: 20px;
+		max-width: 20px;
+	}
 }
 

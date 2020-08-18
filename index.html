@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
     <title>Portfolio</title>
@@ -173,7 +174,6 @@
   </section>
 </div>
 
-
   <footer id="contact" class="footer-distributed">
     <div class="footer-left">
       <h3>MY PORTFOLIO</h3>
@@ -216,27 +216,37 @@
       </div>
     </div>
   </footer>
-<script type="text/javascript">
-  function toggle() {
-    var trailer=document.querySelector(".trailer")
-    var video=document.querySelector("video")
-    trailer.classList.toggle("active")
-    video.pause();
-    video.currentTime = 0;
-  }
-</script>
+  <button id="gotopbtn">
+    <a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
+  </button>
     <script>
-      $(document).ready(function(){
-        $('.btn').click(function(){
-          $('.items').toggleClass("show");
-          $('ul li').toggleClass("hide");
-        });
+    const gotopbtn = document.querySelector("#gotopbtn");
+    gotopbtn.addEventListener("click",function(){
+      $("html,body").animate({scrollTop:0}, "slow");
+    });
+  </script>
+  <script type="text/javascript">
+    function toggle() {
+      var trailer=document.querySelector(".trailer")
+      var video=document.querySelector("video")
+      trailer.classList.toggle("active")
+      video.pause();
+      video.currentTime = 0;
+    }
+  </script>
+  <script>
+    $(document).ready(function(){
+      $('.btn').click(function(){
+        $('.items').toggleClass("show");
+        $('ul li').toggleClass("hide");
       });
-    </script>
-    <script src="js/home.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/wow.min.js"></script> 
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/custom.js"></script>
+    });
+  </script>
+    
+   <script src="js/home.js"></script>
+   <script src="js/jquery.min.js"></script>
+   <script src="js/wow.min.js"></script> 
+   <script src="js/jquery.validate.min.js"></script>
+   <script src="js/custom.js"></script>
   </body>
 </html>

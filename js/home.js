@@ -35,9 +35,9 @@ $('a[href^="#"]').on("click",function (e) {
     };
 
 
-$('#number1').jQuerySimpleCounter({end: 20,duration: 5000});
+$('#number1').jQuerySimpleCounter({end: 25,duration: 5000});
 $('#number3').jQuerySimpleCounter({end: 17,duration: 5000});
-$('#number4').jQuerySimpleCounter({end: 2,duration: 5000});
+$('#number4').jQuerySimpleCounter({end: 10,duration: 5000});
 
 
 
@@ -63,3 +63,4 @@ if ($(window).width() > 992) {
       }   
   });
 } // end if
+

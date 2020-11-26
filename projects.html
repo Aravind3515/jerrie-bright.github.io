@@ -32,7 +32,7 @@
       </ul>
     </nav>
 
-<div class="bod">
+<div class="bod" id="top">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -355,28 +355,9 @@
     </div>
   </footer>
   
-  <button id="gotopbtn">
-    <a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
-  </button>
-    <script>
-    const gotopbtn = document.querySelector("#gotopbtn");
-    gotopbtn.addEventListener("click",function(){
-      $("html,body").animate({scrollTop:0}, "slow");
-    });
-  </script>
-  
+    <a name="gettop"></a>
+    <button id="btn"><a href="#top"><i class="fas fa-arrow-up"></i></a></button>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-        <script src="js/isotope.min.js"></script>
-        <script src="js/script.js"></script>  
-            <script>
-      $(document).ready(function(){
-        $('.btn').click(function(){
-          $('.items').toggleClass("show");
-          $('ul li').toggleClass("hide");
-        });
-      });
-    </script>
     <script src="js/home.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/wow.min.js"></script> 
@@ -384,4 +365,4 @@
     <script src="js/custom.js"></script>
 
 </body>
-</html>
+</htmll>

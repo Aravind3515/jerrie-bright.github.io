@@ -242,37 +242,15 @@
       </div>
     </div>
   </footer>
-  <button id="gotopbtn">
-    <a class="gotopbtn" href="#"> <i class="fas fa-arrow-up"></i> </a>
-  </button>
-    <script>
-    const gotopbtn = document.querySelector("#gotopbtn");
-    gotopbtn.addEventListener("click",function(){
-      $("html,body").animate({scrollTop:0}, "slow");
-    });
-  </script>
-  <script type="text/javascript">
-    function toggle() {
-      var trailer=document.querySelector(".trailer")
-      var video=document.querySelector("video")
-      trailer.classList.toggle("active")
-      video.pause();
-      video.currentTime = 0;
-    }
-  </script>
-  <script>
-    $(document).ready(function(){
-      $('.btn').click(function(){
-        $('.items').toggleClass("show");
-        $('ul li').toggleClass("hide");
-      });
-    });
-  </script>
-    
-   <script src="js/home.js"></script>
-   <script src="js/jquery.min.js"></script>
-   <script src="js/wow.min.js"></script> 
-   <script src="js/jquery.validate.min.js"></script>
-   <script src="js/custom.js"></script>
+
+<a name="gettop"></a>
+<button id="btn"><a href="#wrapper1"><i class="fas fa-arrow-up"></i></a></button>
+
+  <script src="js/home.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/wow.min.js"></script> 
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/custom.js"></script>
+
   </body>
 </html>

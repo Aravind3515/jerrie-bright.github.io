@@ -66,6 +66,13 @@ h1, h2, h3, h4, h5, h6, {
     margin-bottom: 14px;
 }
 
+.whiteside{
+  color: #fff;
+  font-size: 50px;
+  font-family: Roboto Slab;
+    margin-bottom: 14px;
+}
+
 @media screen and (max-width: 450px) {
   .white{
     font-size: 40px;
@@ -154,7 +161,7 @@ nav ul li a:hover:before{
 }
 label #btn,
 label #cancel{
-  color: white;
+  color: #fff;
   font-size: 30px;
   float: right;
   line-height: 80px;
@@ -177,6 +184,7 @@ label #cancel{
   label #btn{
     display: block;
     float: right;
+    margin-top: 40px;
   }
   ul{
     position: fixed;
@@ -202,8 +210,9 @@ label #cancel{
     float: right;
   }
   #check:checked ~ label #btn{
-    display: none;
+    display: block;
     float: right;
+    margin-top: 40px;
   }
   #check:checked ~ label #cancel{
     display: block;

@@ -528,3 +528,9 @@ section {
 		font-size: 15px;
 	}
 }
+
+.fright{
+  float: right;
+  margin-top: -200px;
+  margin-right: -100px;
+}

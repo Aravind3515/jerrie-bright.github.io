@@ -2,7 +2,6 @@
 <html lang="en" dir="ltr">
 <head>
     <meta charset="utf-8">
-    <title>Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -11,35 +10,43 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <link href="css/animate.min.css" rel="stylesheet" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jerrin Bright - Portfolio Webpage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio webpage of Jerrin Bright" />
+    <meta name="keywords" content="portfolio,website,personal website,github,robotics" />
+    <meta name="author" content="Jerrin Bright" />
+    <link rel="icon" type="image/png" href="img/logo.png">
+
 </head>
 <body class="bg">
-  <div id="wrapper1" class="container-fluid" style="background-image: url('');">
-    <nav class="navbar navbar-fixed-top">
-      <input type="checkbox" id="check">
-        <label for="check">
-          <i class="fas fa-bars" id="btn"></i>
-          <i class="fas fa-times" id="cancel"></i>
-        </label>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="timeline.html">Timeline</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="achievements.html">Achievements</a></li>
-        <li><a href="blog.html">Blogs</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-      </ul>
-    </nav>
-  
-    <div id="header" class="container-fluid demo">
-      <div id="welcome">
-        <h1 class="wow zoomInRight">Jerrin Bright</h1>
-        <h3 class="wow zoomInLeft">Robotics and AI Enthusiast</h3>
-        <div class="scrolldown">
-        <a href="#about"><span></span><span></span><span></span></a>
-      </div>
-    </div>
-  </div>
-  </div>
+  <canvas id="canvas">  </canvas>
+	  <div id="wrapper1" class="container-fluid">
+	    <nav class="navbar navbar-fixed-top">
+	      <input type="checkbox" id="check">
+	        <label for="check">
+	          <i class="fas fa-bars" id="btn"></i>
+	          <i class="fas fa-times" id="cancel"></i>
+	        </label>
+	      <ul>
+	        <li><a href="index.html">Home</a></li>
+	        <li><a href="timeline.html">Timeline</a></li>
+	        <li><a href="projects.html">Projects</a></li>
+	        <li><a href="achievements.html">Achievements</a></li>
+	        <li><a href="blog.html">Blogs</a></li>
+	        <li><a href="#contact">Contact Me</a></li>
+	      </ul>
+	    </nav>
+	  
+	    <div id="header" class="container-fluid demo">
+	      <div id="welcome">
+	        <h1 class="wow zoomInRight">Jerrin Bright</h1>
+	        <h3 class="wow zoomInLeft">Robotics and AI Enthusiast</h3>
+	        <div class="scrolldown">
+	        <a href="#about"><span></span><span></span><span></span></a>
+	      </div>
+	    </div>
+	  </div>
 
   <div id="about">
     <h2 class="wow bounceIn white">ABOUT ME</h2><br>
@@ -77,7 +84,7 @@
             </div>
             <div class="item wow fadeInUpBig animated animated" data-number="2" style="visibility: visible;">
                 <i class="fa fa-briefcase"></i>
-                <p id="number4" class="number">10</p>
+                <p id="number4" class="number">12</p>
                 <span></span>
                 <p>INTERNSHIP XP (in Months)</p>
             </div>
@@ -251,13 +258,14 @@
   </footer>
 
 <a name="gettop"></a>
-<button id="btn"><a href="#wrapper1"><i class="fas fa-arrow-up"></i></a></button>
+<button id="btn"><a href="#canvas"><i class="fas fa-arrow-up"></i></a></button>
 
   <script src="js/home.js"></script>
   <script src="js/jquery.min.js"></script>
   <script src="js/wow.min.js"></script> 
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/custom.js"></script>
+  <script src="js/canvas.js"></script>
 
   </body>
 </html>

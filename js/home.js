@@ -37,7 +37,7 @@ $('a[href^="#"]').on("click",function (e) {
 
 $('#number1').jQuerySimpleCounter({end: 25,duration: 5000});
 $('#number3').jQuerySimpleCounter({end: 17,duration: 5000});
-$('#number4').jQuerySimpleCounter({end: 10,duration: 5000});
+$('#number4').jQuerySimpleCounter({end: 12,duration: 5000});
 
 
 
@@ -48,19 +48,4 @@ $('#number4').jQuerySimpleCounter({end: 10,duration: 5000});
             $('.authorWindowWrapper').stop().fadeOut('fast').find('p').removeClass('trans');
         });
   
-
-///////////////// fixed menu on scroll for desktop
-if ($(window).width() > 992) {
-  $(window).scroll(function(){  
-     if ($(this).scrollTop() > 40) {
-        $('#navbar_top').addClass("fixed-top");
-        // add padding top to show content behind navbar
-        $('body').css('padding-top', $('.navbar').outerHeight() + 'px');
-      }else{
-        $('#navbar_top').removeClass("fixed-top");
-         // remove padding top from body
-        $('body').css('padding-top', '0');
-      }   
-  });
-} // end if
 

@@ -92,7 +92,7 @@ class NumberElement {
 
 class NumberElementCollector {
 
-  constructor(count = 100, spawnTimeout = 20) {
+  constructor(count = 150, spawnTimeout = 20) {
     this.numberElements = []
 
     let generator = () => {
@@ -139,7 +139,7 @@ var numberElementCollector = new NumberElementCollector()
 
 var draw = () => {
   ctx.beginPath()
-  ctx.fillStyle = "rgba(0, 0, 0, 0.1)"
+  ctx.fillStyle = "rgba(0, 0, 0, 0.25)"
   for (let numberElement of numberElementCollector.get()) {
     ctx.font = numberElement.size / 1.5 + 'px arial black'
     ctx.textBaseline = 'bottom'

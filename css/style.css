@@ -428,3 +428,186 @@ footer{
   .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
     top: 0;
     transform: rotate(-135deg); }
+
+button {
+  color: #353a43;
+  background-color: #eee;
+  padding: 0.3em 0.8em;
+  border: 0;
+  border-radius: 3px;
+  font-size: 0.95em;
+  cursor: pointer;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.16), 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  border-bottom: solid 1px #353a43;
+  transition: all ease .3s;
+}
+
+button:hover,
+button:active {
+  color: #486b93;
+  background-color: #fff;
+}
+
+.wrappe {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 60%;
+  left: 52%;
+  transform: translate(-50%, -50%) translateY(20px) scale(1.5);
+  overflow: hidden;
+  animation-delay: 0.3s;
+}
+.wrappe a{
+    font: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  .wrappe {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+.conta {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+}
+[data-typing] {
+  position: absolute;
+  top: 0;
+  /*   border: 1px solid #f55; */
+  transform-origin: 0% 0%;
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+  top: 100px;
+  line-height: 1;
+  color: #fff;
+}
+[data-typing="i"] {
+  top: 0;
+  left: 50px;
+  font-size: 90px;
+  height: 70px;
+  line-height: 70px;
+}
+[data-typing="mech"] {
+  top: 3px;
+  left: 80px;
+  font-size: 27px;
+  letter-spacing: 1px;
+}
+[data-typing="engineer"] {
+  top: 30px;
+  left: 80px;     
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+[data-typing="with"] {
+  top: 74px;
+  left: 265px;
+  font-size: 36px;
+  transform: rotate(90deg);
+  color: #fff;
+}
+[data-typing="expertise"] {
+  top: 74px;
+  left: 229px;
+  transform: rotate(90deg);
+  font-size: 24px;
+}
+[data-typing="in"] {
+  top: 72px;
+  right: 200px;
+  font-size: 30px;
+}
+[data-typing="rob"] {
+      top: 100px;
+  right: 160px;
+  font-size: 30px;
+}
+[data-typing="vision"] {
+    top: 128px;
+  right: 160px;
+  font-size: 30px;
+}
+[data-typing="automation"] {
+  top: 157px;
+  right: 160px;
+  font-size: 30px;
+}
+[data-typing="author"] {
+  top: 190px;
+  right: -10px;
+  font-size: 30px;
+  background: #333;
+  padding: 0px 4px;
+}
+
+body .scenejs-editor-timeline {
+  position: fixed;
+  bottom: 0;
+  max-height: 300px;
+}
+
+    .drone-container {
+      position: relative;
+      animation-delay: 1s;
+    }
+
+    .camera-container {
+      position: absolute;
+      width: 60px;
+      top: 110px;
+      left: 120px;
+    }
+
+
+    .blade {
+      position: absolute;
+      top: 46px;
+      animation-duration: 0.2s;
+      animation-name: spin;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-play-state: running;
+    }
+
+    .bladeLeft {
+      left: 5px;
+    }
+
+    .bladeRight {
+      left: 224px;
+    }
+
+    @keyframes spin {
+      from {
+        transform:rotateY(0deg);
+      }
+      to {
+         transform:rotateY(-360deg);
+      }
+    }
+
+    @keyframes flash {
+      0% {
+          fill: #fff;
+          opacity:1;
+      }
+      11% {
+          fill: #fff;
+      }
+      22% {
+          fill: #fff;
+      }
+      55% {
+          fill: yellow;
+      }
+      77% {
+          fill: yellow;
+      }
+      100% {
+          fill: #fff;
+      }
+    }

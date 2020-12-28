@@ -20,6 +20,20 @@
 
 </head>
 <body id="canvas" class="bg">
+
+  <div id="preloader">
+    <div id="status">
+      <div class="spinner">
+          <div class="rect1"></div>
+          <div class="rect2"></div>
+          <div class="rect3"></div>
+          <div class="rect4"></div>
+          <div class="rect5"></div>
+          <div class="rect5"></div>
+      </div>
+    </div>
+  </div>
+
       <div class="drone-container wow fadeIn">
     <svg class="base_link" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="300" height="130" viewBox="160 200 480 140" enable-background="new -102.833 -102.889 341.333 300.667" xml:space="preserve">
       <g>
@@ -86,17 +100,17 @@
                     </div>
                     <div class="sec2contactform">
                         <h3 class="sec2frmtitle">Want to Know More?? Drop a Mail</h3>
-                        <form action="">
+                        <form action="process.php" method="POST">
                             <div class="clearfix">
-                                <input class="col2 first" type="text" placeholder="FirstName">
-                                <input class="col2 last" type="text" placeholder="LastName">
+                                <input name= "name" class="col2 first" type="text" placeholder="FirstName">
+                                <input name= "lastname"class="col2 last" type="text" placeholder="LastName">
                             </div>
                             <div class="clearfix">
-                                <input  class="col2 first" type="Email" placeholder="Email">
+                                <input  name = "email" class="col2 first" type="Email" placeholder="Email">
                                 <input class="col2 last" type="text" placeholder="Contact Number">
                             </div>
                             <div class="clearfix">
-                                <textarea name="textarea" id="" cols="30" rows="7" placeholder="Your message here..."></textarea>
+                                <textarea name="comment" id="comment" cols="30" rows="7" placeholder="Your message here..."></textarea>
                             </div>
                             <div class="clearfix"><input type="submit" value="Send"></div>
                         </form>
@@ -108,7 +122,11 @@
         </div>
     </div>
     
-<script src="js/home.js"></script>
+  <script src="js/home.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/wow.min.js"></script> 
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/custom.js"></script>
 
 </body>
 </html>
